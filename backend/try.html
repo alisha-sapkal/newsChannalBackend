@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending News</title>
+    <style>
+        .trending-news {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #1E2532;
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .trending-news::before, 
+        .trending-news::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #E1E1E1;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="trending-news">
+        Trending News
+    </div>
+</body>
+</html>

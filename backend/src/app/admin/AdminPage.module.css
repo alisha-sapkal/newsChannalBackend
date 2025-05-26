@@ -1,0 +1,87 @@
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 700px;
+  /* height: 700px; */
+  margin: 0px auto;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  box-shadow: 2px 3px 5px 5px rgba(22, 22, 22, 0.277);
+  border-radius: 12px;
+  margin-bottom: 50px;
+}
+
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input,
+.textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--card-bg-color);
+}
+
+.button {
+  background-color: #0070f3;
+  color: var(--text-color);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+.button:disabled:hover {
+  background-color: #a0a0a0;
+} 
+
+.button:hover {
+  background-color: #005bb5;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 10px;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .input,
+  .textarea {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 8px;
+  }
+}

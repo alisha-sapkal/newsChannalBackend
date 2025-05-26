@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.dark-toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  right: 5px;
+  top: 25px;
+}
+
+/* Default styles for screens larger than 900px */
+.toggle-btn {
+  background-color: rgb(114, 114, 118);
+  width: 50px;
+  height: 28px;
+  border-radius: 80px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.toggle-btn .ball {
+  background-color: white;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.2s linear;
+  left: -14px;
+  top: 50%;
+  transform: translateY(-70%);
+}
+
+.toggle-btn.toggled {
+  background-color: rgb(217, 217, 204);
+}
+
+.toggle-btn.toggled .ball {
+  left: calc(100% - 41px); 
+  background-color: black;
+}
+
+/* Responsive styles for screens smaller than 900px */
+@media (max-width: 900px) {
+  .toggle-btn {
+    width: 50px;
+    height: 28px;
+    border-radius: 80px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    align-items: center;
+  }
+
+  .toggle-btn .ball {
+    background-color: white;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    border-radius: 50%;
+    transform: translateY(-70%);
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .toggle-btn.toggled {
+    background-color: rgb(217, 217, 204);
+  }
+
+  .toggle-btn.toggled .ball {
+    left: calc(20px); 
+    background-color: black;
+  }
+}
